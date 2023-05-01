@@ -642,6 +642,7 @@ img {
 }
 
 .email-input-name {
+  text-align: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -673,7 +674,6 @@ img {
   padding: 8px 16px;
   border: 1px solid var(--white);
   border-radius: 4px;
-  margin-bottom: 16px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 
@@ -871,6 +871,7 @@ img {
   height: 16px;
   border: 1.25px solid var(--navy-blue);
   border-radius: 2px;
+  flex-shrink: 0;
   align-items: center;
   justify-content: center;
   margin-right: 8px;
@@ -889,14 +890,14 @@ img {
   align-items: center;
   display: flex;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 10px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--light-slate);
 }
 
 .privacy-link {
-  font-size: 12px;
+  font-size: 10px;
   line-height: 1.33;
   letter-spacing: 0.04em;
   text-decoration: underline;
@@ -980,6 +981,18 @@ img {
   }
   .fifth-section-list {
     gap: 72px 16px;
+  }
+  .email-input-name {
+    margin-bottom: 16px;
+  }
+  .footer-label {
+    width: 100%;
+  }
+  .privacy-label {
+    font-size: 12px;
+  }
+  .privacy-link {
+    font-size: 12px;
   }
 }
 @media screen and (min-width: 392px) {
@@ -1116,24 +1129,55 @@ img {
     gap: 64px 24px;
   }
   .fifth-section .container {
-    width: 650px;
+    width: 584px;
   }
   .fifth-section-list {
     gap: 72px 24px;
   }
+
+  .fifth-section-list-item {
+    width: 168px;
+  }
   .footer .container {
+    width: 582px;
     flex-direction: row;
-    text-align: left;
+    flex-wrap: wrap;
     align-items: stretch;
     gap: 72px 24px;
-    flex-wrap: wrap;
+  }
+
+  .footer-container {
+    text-align: start;
+  }
+
+  .footer-logo-wrap {
+    width: auto;
+  }
+
+  .footer-text {
+    text-align: start;
+  }
+
+  .email-input-container {
+    width: 453px;
+  }
+
+  .email-input-name {
+    text-align: start;
+    margin-bottom: 0;
+  }
+  .email-input-form {
+    flex-direction: row;
+    align-items: ;
   }
   .footer-form-input {
     flex-direction: row;
-    gap: 24px;
+    margin-bottom: 0;
   }
   .footer-label {
     width: 264px;
+    padding-top: 16px;
+    margin-right: 24px;
   }
   .modal {
     width: 408px;
@@ -1244,16 +1288,21 @@ img {
   }
   .footer .container {
     width: 1158px;
+    gap: 0;
   }
   .footer-container {
-    gap: 0;
     flex-wrap: nowrap;
+    text-align: start;
   }
+
   .email-input-container {
     margin-left: 80px;
   }
   .social-media-container {
     margin-left: 120px;
+  }
+  .email-input-name {
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1440px) {
